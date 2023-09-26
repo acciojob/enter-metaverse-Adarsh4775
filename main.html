@@ -9,12 +9,12 @@
 <body>
 	<p id="status" >Enter the Metaverse</p>
 	<button id="enterBtn">Enter</button>
-    <script type="text/javascript" src="./script.js">
-		const firstp = document.getElementById("status");
-		const  Enterbtn = document.getElementById("enterBtn");
+    <script>
+		const statustext = document.getElementById("status");
+		const  enterBtn = document.getElementById("enterBtn");
 
-		Enterbtn = document.addEventListener("click", function(){
-			firstp.textcontent("Entered Metaverse");
+		enterBtn = document.addEventListener("click", function(){
+			statustext.textContent="Entered Metaverse";
 		});
 </script>
 
