@@ -7,8 +7,15 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
+	<p id="status" >Enter the Metaverse</p>
+	<button id="enterBtn">Enter</button>
     <script type="text/javascript" src="./script.js">
+		const firstp = document.getElementById("status");
+		const  Enterbtn = document.getElementById("enterBtn");
+
+		Enterbtn = document.addEventListener("click", function(){
+			firstp.textcontent("Entered Metaverse");
+		});
 </script>
 
 </body>
