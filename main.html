@@ -8,14 +8,13 @@
 
 <body>
 	<p id="status">Enter the Metaverse</p>
-<button id="enterBtn">Enter</button>
+<button id="enterBtn" onclick="myfunction()">Enter</button>
+	<h1 id="big"></h1>
 <script>
-    const statustext = document.getElementById("status");
-    const enterit = document.getElementById("enterBtn");
-
-    enterit.addEventListener("click", function(){
-        statustext.textContent = "Entered Metaverse";
-    });
+  function myfunction(){
+	   document.getElementById("status").innerHTML ="Entered Metaverse";
+	   document.getElementById("big").innerHTML ="Entered Metaverse";
+  }
 </script>
 
 
