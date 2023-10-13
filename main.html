@@ -11,18 +11,20 @@
     <h1 id="output"></h1>
 
     <script>
-        document.getElementById("enterBtn").addEventListener("click", function () {
-            // Get the <p> and <h1> elements by their IDs
+          document.getElementById("enterBtn").addEventListener("click", function () {
             var statusParagraph = document.getElementById("status");
             var outputHeading = document.getElementById("output");
 
-            // Update the text inside the <p> element
-            statusParagraph.innerHTML = "Entered Metaverse";
-
-            // Update the text inside the <h1> element
-            outputHeading.innerHTML = "Entered Metaverse";
+            if (statusParagraph.innerHTML === "Enter the Metaverse") {
+                statusParagraph.innerHTML = "Entered Metaverse";
+                outputHeading.innerHTML = "Entered Metaverse";
+            } else {
+                statusParagraph.innerHTML = "Enter the Metaverse";
+                outputHeading.innerHTML = "";
+            }
         });
-    </script>
+
+</script>
 </body>
 
 </html>
