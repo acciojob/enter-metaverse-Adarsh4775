@@ -8,18 +8,14 @@
     <h1 id="output"></h1>
 
     <script>
-     document.getElementById("enterBtn").addEventListener("click", function () {
+    document.getElementById("enterBtn").addEventListener("click", function () {
     var statusParagraph = document.getElementById("status");
 
     if (statusParagraph.innerHTML === "Enter the Metaverse") {
-  
-        var newHeading = document.createElement("h1");
- 
-        newHeading.innerHTML = "Entered Metaverse";
-    
-        statusParagraph.parentNode.replaceChild(newHeading, statusParagraph);
+        statusParagraph.innerHTML = "<h1>Entered Metaverse</h1>";
     }
 });
+
 
 
     </script>
